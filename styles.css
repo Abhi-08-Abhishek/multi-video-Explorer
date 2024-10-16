@@ -1,0 +1,77 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header, .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 35px 0;
+}
+
+.header h1, .footer p {
+    margin: 0;
+}
+
+/* Login Page Styles */
+.login-container {
+    width: 90%;
+    max-width: 400px; /* Maximum width for larger screens */
+    margin: 50px auto; /* Centering the container */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Spacing below the title */
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input {
+    width: 100%; /* Full width for inputs */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    background-color: #ed1f1f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Full width for button */
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #6d60fe; /* Hover effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .login-container {
+        margin: 20px auto; /* Reduce margin for smaller screens */
+    }
+    
+    .header h1, .footer p {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+}
